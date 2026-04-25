@@ -1,2 +1,110 @@
+# =========================
+# OS / System Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# VS Code
+# =========================
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+
+# Virtual environments
+.venv/
 venv/
-.idea/
+env/
+ENV/
+
+# =========================
+# Jupyter / Notebooks
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Logs & temp
+# =========================
+*.log
+logs/
+tmp/
+temp/
+
+# =========================
+# Environment variables
+# =========================
+.env
+.env.*
+*.env
+
+# =========================
+# AI / ML specific
+# =========================
+
+# Model checkpoints / weights
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.pb
+
+# TensorFlow / PyTorch outputs
+runs/
+checkpoints/
+outputs/
+logs/
+wandb/
+mlruns/
+
+# Large datasets
+data/
+datasets/
+*.csv
+*.tsv
+*.jsonl
+
+# HuggingFace cache
+.cache/
+huggingface/
+transformers/
+
+# =========================
+# CUDA / C++ (optional if you mix)
+# =========================
+*.o
+*.obj
+*.out
+*.exe
+*.dll
+*.lib
+*.a
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake-build-*/
+
+# =========================
+# Misc
+# =========================
+*.bak
+*.swp
+*.swo

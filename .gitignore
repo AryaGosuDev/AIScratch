@@ -37,6 +37,7 @@ ENV/
 # Jupyter / Notebooks
 # =========================
 .ipynb_checkpoints/
+*:Zone.Identifier
 
 # =========================
 # Logs & temp

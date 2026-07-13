@@ -1,10 +1,5 @@
-
-
 import numpy as nmp
-print ( "import nmp")
 from sklearn.neural_network import MLPClassifier
-
-print ( "Begin ")
 
 nmp.random.seed(3743278)
 
@@ -27,6 +22,17 @@ x_train = x[:75]
 x_test = x[75:]
 y_train = y[:75]
 y_test = y[75:]
+
+clf = MLPClassifier(hidden_layer_sizes=(5,))
+clf.fit ( x_train, y_train)
+
+scores = clf.score ( x_test, y_test )
+print ( "Model Accuracy: %0.4f" % scores )
+
+w0 = clf.coefs_[0].T
+b0 = clf.intercepts_[0].reshape ( (5,1))
+w1 = clf.coefs_[1].T
+b1 = clf.intercepts_[1]
 
 print ( "Done")
 

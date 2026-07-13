@@ -25,3 +25,8 @@ print ( "score     :", score )
 print ( "errors:")
 print ( "    actual    :", y_test[err] )
 print ( "    predicted:", pred[err] )
+
+x = nmp.random.rand ( 4,5)
+print ( x.shape )
+y = nmp.sum ( x , axis = 1)
+print ( y.shape )
